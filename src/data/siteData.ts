@@ -1,6 +1,6 @@
 export const siteData = {
   brand: {
-    name: 'ReThread',
+    name: 'Jeans Zữ Zìn',
     tagline: 'Upcycled Denim Handbags',
     description:
       'Transform discarded denim into beautiful, unique handbags. Each piece tells a story of sustainability, creativity, and conscious fashion choices.',
@@ -17,7 +17,7 @@ export const siteData = {
       { icon: 'heart', text: 'Eco-Friendly' },
       { icon: 'recycle', text: '100% Upcycled' },
     ],
-    image: '/placeholder.svg?height=500&width=500',
+    image: '/placeholder.png?height=500&width=500',
   },
   about: {
     title: 'Our Mission',
@@ -35,7 +35,7 @@ export const siteData = {
           "By choosing upcycled products, you're helping reduce textile waste and supporting circular fashion.",
       },
     ],
-    image: '/placeholder.svg?height=400&width=600',
+    image: '/placeholder.png?height=400&width=600',
   },
   features: {
     title: 'Why Choose Upcycled?',
@@ -75,21 +75,21 @@ export const siteData = {
         name: 'Vintage Tote 1',
         description: 'Spacious and stylish, perfect for everyday use',
         price: 89,
-        image: '/placeholder.svg?height=300&width=400',
+        image: '/placeholder.png?height=300&width=400',
       },
       {
         id: 2,
         name: 'Vintage Tote 2',
         description: 'Spacious and stylish, perfect for everyday use',
         price: 89,
-        image: '/placeholder.svg?height=300&width=400',
+        image: '/placeholder.png?height=300&width=400',
       },
       {
         id: 3,
         name: 'Vintage Tote 3',
         description: 'Spacious and stylish, perfect for everyday use',
         price: 89,
-        image: '/placeholder.svg?height=300&width=400',
+        image: '/placeholder.png?height=300&width=400',
       },
     ],
   },
