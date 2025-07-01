@@ -1,0 +1,31 @@
+@import 'tailwindcss';
+
+.ant-typography h1,
+.ant-typography h2,
+.ant-typography h3,
+.ant-typography h4 {
+  color: inherit !important;
+}
+
+.ant-card {
+  transition: all 0.3s ease;
+}
+
+.ant-card:hover {
+  transform: translateY(-2px);
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.ant-badge-count {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 12px;
+  border-radius: 16px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
