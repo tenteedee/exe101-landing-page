@@ -1,8 +1,7 @@
 'use client';
 
 import type React from 'react';
-import { Typography, Space } from 'antd';
-import { Recycle } from 'lucide-react';
+import {Typography, Space} from 'antd';
 import { siteData } from '../data/siteData';
 
 const { Text } = Typography;
@@ -23,10 +22,10 @@ const Header: React.FC<HeaderProps> = ({ onNavigate }) => {
   };
 
   return (
-    <header className='sticky top-0 z-50 bg-white/95 backdrop-blur border-b px-4 lg:px-6 h-16 flex items-center'>
+    <header className='sticky top-0 z-50 border-b px-4 lg:px-6 h-16 flex items-center' style={{ background: '#fff', backdropFilter: 'blur(8px)' }}>
       <div className='flex items-center cursor-pointer'>
-        <Recycle className='h-8 w-8 text-emerald-600' />
-        <Text className='ml-2 text-xl font-bold text-gray-900'>
+        <img src={'../public/logo.png'} alt={'Jeanious'} className='h-10 w-15 ' />
+        <Text className='ml-2 text-xl font-bold' style={{ color: '#8BA8CB' }}>
           {siteData.brand.name}
         </Text>
       </div>
@@ -36,9 +35,10 @@ const Header: React.FC<HeaderProps> = ({ onNavigate }) => {
             <button
               key={index}
               onClick={() => handleNavClick(item.href)}
-              className='text-sm font-medium hover:text-emerald-600 transition-colors bg-transparent border-none cursor-pointer'
+              className='text-sm font-medium transition-colors bg-transparent border-none cursor-pointer'
+              style={{ color: '#2D3559', background: 'transparent' }}
             >
-              {item.text}
+              <span style={{ color: '#2D3559' }}>{item.text}</span>
             </button>
           ))}
         </Space>

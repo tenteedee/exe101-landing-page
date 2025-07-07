@@ -16,7 +16,7 @@ const Hero: React.FC<HeroProps> = ({ onShopClick, onLearnClick }) => {
   const { hero } = siteData;
 
   return (
-    <section className='py-12 md:py-24 lg:py-32 bg-gradient-to-br from-emerald-50 to-blue-50'>
+    <section className='py-12 md:py-24 lg:py-32' style={{ background: 'linear-gradient(135deg, #8BA8CB 0%, #2D3559 100%)' }}>
       <div className='container mx-auto px-4 md:px-6'>
         <Row gutter={[48, 24]} align='middle'>
           <Col xs={24} lg={14}>
@@ -24,8 +24,8 @@ const Hero: React.FC<HeroProps> = ({ onShopClick, onLearnClick }) => {
               <Badge
                 count={hero.badge}
                 style={{
-                  backgroundColor: '#d1fae5',
-                  color: '#065f46',
+                  backgroundColor: '#8BA8CB',
+                  color: '#2D3559',
                   border: 'none',
                 }}
               />
@@ -34,7 +34,7 @@ const Hero: React.FC<HeroProps> = ({ onShopClick, onLearnClick }) => {
                 className='!mb-0 !text-3xl sm:!text-5xl xl:!text-6xl'
               >
                 {hero.title}
-                <span className='text-emerald-600'> {hero.titleHighlight}</span>
+                <span style={{ color: '#2D3559' }}> {hero.titleHighlight}</span>
               </Title>
               <Paragraph className='!text-gray-600 !text-lg md:!text-xl max-w-2xl'>
                 {hero.description}
@@ -43,12 +43,12 @@ const Hero: React.FC<HeroProps> = ({ onShopClick, onLearnClick }) => {
                 <Button
                   type='primary'
                   size='large'
-                  className='bg-emerald-600 hover:!bg-emerald-700 border-emerald-600'
+                  style={{ backgroundColor: '#2D3559', borderColor: '#2D3559', color: '#fff' }}
                   onClick={onShopClick}
                 >
                   {hero.primaryCTA}
                 </Button>
-                <Button size='large' ghost onClick={onLearnClick}>
+                <Button size='large' ghost style={{ color: '#2D3559', borderColor: '#2D3559' }} onClick={onLearnClick}>
                   {hero.secondaryCTA}
                 </Button>
               </Space>
@@ -56,10 +56,10 @@ const Hero: React.FC<HeroProps> = ({ onShopClick, onLearnClick }) => {
                 {hero.features.map((feature, index) => (
                   <Space key={index}>
                     {feature.icon === 'heart' && (
-                      <Heart className='h-4 w-4 text-red-500' />
+                      <Heart className='h-4 w-4' style={{ color: '#8BA8CB' }} />
                     )}
                     {feature.icon === 'recycle' && (
-                      <Recycle className='h-4 w-4 text-emerald-600' />
+                      <Recycle className='h-4 w-4' style={{ color: '#2D3559' }} />
                     )}
                     <Text type='secondary'>{feature.text}</Text>
                   </Space>

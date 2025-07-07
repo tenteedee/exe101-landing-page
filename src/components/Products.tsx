@@ -40,7 +40,7 @@ const Products: React.FC<ProductsProps> = ({ onProductClick }) => {
                   <Button
                     key='view'
                     type='text'
-                    className='text-emerald-600'
+                    style={{ color: '#2D3559' }}
                     onClick={() => onProductClick?.(product.id)}
                   >
                     View Details

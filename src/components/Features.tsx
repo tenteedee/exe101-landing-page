@@ -11,31 +11,31 @@ const Features: React.FC = () => {
   const getIcon = (iconName: string) => {
     switch (iconName) {
       case 'recycle':
-        return <Recycle className='h-8 w-8 text-emerald-600' />;
+        return <Recycle className='h-8 w-8' style={{ color: '#2D3559' }} />;
       case 'heart':
-        return <Heart className='h-8 w-8 text-blue-600' />;
+        return <Heart className='h-8 w-8' style={{ color: '#8BA8CB' }} />;
       case 'shield':
-        return <ShieldCheck className='h-8 w-8 text-purple-600' />;
+        return <ShieldCheck className='h-8 w-8' style={{ color: '#2D3559' }} />;
       default:
-        return <Recycle className='h-8 w-8 text-emerald-600' />;
+        return <Recycle className='h-8 w-8' style={{ color: '#2D3559' }} />;
     }
   };
 
   const getBackgroundColor = (color: string) => {
     switch (color) {
       case 'emerald':
-        return 'bg-emerald-100';
+        return 'bg-[#8BA8CB]';
       case 'blue':
-        return 'bg-blue-100';
+        return 'bg-[#2D3559]';
       case 'purple':
-        return 'bg-purple-100';
+        return 'bg-[#8BA8CB]';
       default:
-        return 'bg-emerald-100';
+        return 'bg-[#8BA8CB]';
     }
   };
 
   return (
-    <section className='py-12 md:py-24 lg:py-32 bg-gray-50'>
+    <section className='py-12 md:py-24 lg:py-32' style={{ backgroundColor: '#8BA8CB' }}>
       <div className='container mx-auto px-4 md:px-6'>
         <div className='text-center mb-12'>
           <Title level={2} className='!text-3xl sm:!text-5xl'>

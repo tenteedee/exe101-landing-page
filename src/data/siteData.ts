@@ -17,7 +17,7 @@ export const siteData = {
       { icon: 'heart', text: 'Eco-Friendly' },
       { icon: 'recycle', text: '100% Upcycled' },
     ],
-    image: '/placeholder.png?height=500&width=500',
+    image: '/logo2.jpg?height=500&width=500',
   },
   about: {
     title: 'Our Mission',
@@ -112,7 +112,7 @@ export const siteData = {
   },
   footer: {
     copyright:
-      '© 2024 ReThread. All rights reserved. Made with ♻️ for a sustainable future.',
+      '©2025. All rights reserved. Made with love for a sustainable future.',
     links: [
       { text: 'Privacy Policy', href: '#' },
       { text: 'Terms of Service', href: '#' },

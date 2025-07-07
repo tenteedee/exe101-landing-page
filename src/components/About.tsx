@@ -20,18 +20,18 @@ const About: React.FC = () => {
           </Col>
           <Col xs={24} lg={14}>
             <Space direction='vertical' size='large' className='w-full'>
-              <Title level={2} className='!text-3xl sm:!text-5xl'>
+              <Title level={2} className='!text-3xl sm:!text-5xl' style={{ color: '#2D3559' }}>
                 {about.title}
               </Title>
-              <Paragraph className='!text-gray-600 !text-lg'>
+              <Paragraph className='!text-lg' style={{ color: '#8BA8CB' }}>
                 {about.description}
               </Paragraph>
               <Row gutter={[24, 16]}>
                 {about.features.map((feature, index) => (
                   <Col xs={24} sm={12} key={index}>
                     <Space direction='vertical' size='small'>
-                      <Title level={4}>{feature.title}</Title>
-                      <Text type='secondary'>{feature.description}</Text>
+                      <Title level={4} style={{ color: '#2D3559' }}>{feature.title}</Title>
+                      <Text type='secondary' style={{ color: '#8BA8CB' }}>{feature.description}</Text>
                     </Space>
                   </Col>
                 ))}

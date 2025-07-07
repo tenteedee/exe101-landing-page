@@ -47,8 +47,8 @@ const App: React.FC = () => {
     <ConfigProvider
       theme={{
         token: {
-          colorPrimary: '#059669',
-          colorSuccess: '#059669',
+          colorPrimary: '#2D3559',
+          colorSuccess: '#8BA8CB',
           borderRadius: 8,
         },
         components: {
