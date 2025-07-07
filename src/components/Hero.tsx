@@ -32,11 +32,12 @@ const Hero: React.FC<HeroProps> = ({ onShopClick, onLearnClick }) => {
               <Title
                 level={1}
                 className='!mb-0 !text-3xl sm:!text-5xl xl:!text-6xl'
+                style={{ color: '#ffffff' }}
               >
                 {hero.title}
                 <span style={{ color: '#2D3559' }}> {hero.titleHighlight}</span>
               </Title>
-              <Paragraph className='!text-gray-600 !text-lg md:!text-xl max-w-2xl'>
+              <Paragraph className='!text-white !text-lg md:!text-xl max-w-2xl'>
                 {hero.description}
               </Paragraph>
               <Space wrap>
@@ -48,7 +49,7 @@ const Hero: React.FC<HeroProps> = ({ onShopClick, onLearnClick }) => {
                 >
                   {hero.primaryCTA}
                 </Button>
-                <Button size='large' ghost style={{ color: '#2D3559', borderColor: '#2D3559' }} onClick={onLearnClick}>
+                <Button size='large' ghost style={{ color: '#ffffff', borderColor: '#ffffff' }} onClick={onLearnClick}>
                   {hero.secondaryCTA}
                 </Button>
               </Space>
@@ -59,9 +60,9 @@ const Hero: React.FC<HeroProps> = ({ onShopClick, onLearnClick }) => {
                       <Heart className='h-4 w-4' style={{ color: '#8BA8CB' }} />
                     )}
                     {feature.icon === 'recycle' && (
-                      <Recycle className='h-4 w-4' style={{ color: '#2D3559' }} />
+                      <Recycle className='h-4 w-4' style={{ color: '#ffffff' }} />
                     )}
-                    <Text type='secondary'>{feature.text}</Text>
+                    <Text type='secondary'style={{ color: '#ffffff' }}>{feature.text}</Text>
                   </Space>
                 ))}
               </Space>

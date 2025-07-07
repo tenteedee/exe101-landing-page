@@ -25,13 +25,13 @@ const Contact: React.FC<ContactProps> = ({ onSubmit }) => {
   const getIcon = (iconName: string) => {
     switch (iconName) {
       case 'mail':
-        return <Mail className='h-5 w-5 text-emerald-600' />;
+        return <Mail className='h-5 w-5 text-blue-600' />;
       case 'phone':
-        return <Phone className='h-5 w-5 text-emerald-600' />;
+        return <Phone className='h-5 w-5 text-blue-600' />;
       case 'map':
-        return <MapPin className='h-5 w-5 text-emerald-600' />;
+        return <MapPin className='h-5 w-5 text-blue-600' />;
       default:
-        return <Mail className='h-5 w-5 text-emerald-600' />;
+        return <Mail className='h-5 w-5 text-blue-600' />;
     }
   };
 

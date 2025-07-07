@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
   const { footer } = siteData;
 
   return (
-    <footer className='py-6 px-4 md:px-6 border-t' style={{ backgroundColor: '#8BA8CB' }}>
+    <footer className='py-12 px-4 md:px-6 border-t ' style={{ backgroundColor: '#8BA8CB' }}>
       <Row justify='space-between' align='middle'>
         <Col xs={24} sm={12}>
           <Text type='secondary' className='text-xs' style={{ color: '#2D3559' }}>

@@ -33,7 +33,7 @@ const Products: React.FC<ProductsProps> = ({ onProductClick }) => {
                   <img
                     src={product.image || '/placeholder.svg'}
                     alt={product.name}
-                    className='w-full h-64 object-cover'
+                    className='w-full h-84 object-cover'
                   />
                 }
                 actions={[
@@ -53,7 +53,7 @@ const Products: React.FC<ProductsProps> = ({ onProductClick }) => {
                 />
                 <div className='flex justify-between items-center mt-4'>
                   <Text strong className='text-xl'>
-                    ${product.price}
+                    {product.price} VND
                   </Text>
                 </div>
               </Card>
